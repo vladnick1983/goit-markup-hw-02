@@ -1,0 +1,224 @@
+:root {
+  --color-text: #757575;
+  --color-title: #212121;
+  --color-accent: #2196f3;
+  --font-size-text: 14px;
+  --font-size-title: 36px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1600px;
+  height: 80px;
+  text-decoration: none;
+}
+.nav a {
+  color: var(--color-title);
+  font-weight: 500;
+}
+.navigation-logo {
+  text-decoration: none;
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.logo-color {
+  color: var(--color-accent);
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-left: 90px;
+  font-size: var(--font-size-text);
+}
+.navigation-item {
+  list-style: none;
+}
+.navigation-link {
+  text-decoration: none;
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--color-accent);
+}
+.navigation-contacts {
+  margin-left: 300px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: var(--font-size-text);
+  font-weight: 500;
+}
+.navigation-contacts-link {
+  text-decoration: none;
+}
+.navigation-contacts-mail:hover,
+.navigation-contacts-mail:focus {
+  color: var(--color-accent);
+}
+.navigation-contacts-tel:hover,
+.navigation-contacts-tel:focus {
+  color: var(--color-accent);
+}
+/* Main */
+/* Решения */
+.main-solutions {
+  width: 1600px;
+  height: 600px;
+  background-color: #2f303a;
+}
+.solutions-block {
+  padding-top: 200px;
+}
+.main-solutions-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  color: #fff;
+}
+.main-solutions-button {
+  font-weight: 700;
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--color-accent);
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  margin: 30px 0 0 700px;
+  color: #fff;
+}
+/* Наши преимущества */
+.main-privilege {
+  width: 1170px;
+  height: 101px;
+  margin: 90px 0 0 215px;
+  text-align: left;
+}
+.main-privilege-title {
+  display: none;
+}
+.privilege-list {
+  display: flex;
+  gap: 30px;
+}
+.privilege-item {
+  list-style: none;
+}
+.privilege-item-title {
+  font-size: var(--font-size-text);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-title);
+}
+.privilege-item-text {
+  margin-top: 10px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-text);
+}
+/* Чем мы занимаемся */
+.main-lessons {
+  width: 1170px;
+  height: 386px;
+  margin: 90px 0 0 215px;
+}
+.lessons-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--color-title);
+}
+.lessons-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+/* Наша команда */
+.main-team {
+  width: 1600px;
+  height: 648px;
+  margin-top: 90px;
+  background-color: #f5f4fa;
+}
+.team-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--color-title);
+  padding-top: 94px;
+}
+.team-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 50px 0 0 215px;
+}
+.team-list-title {
+  color: var(--color-title);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 30px;
+}
+.team-list-text {
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 10px;
+}
+/* Footer */
+.footer {
+  width: 1600px;
+  height: 252px;
+  background-color: #2f303a;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-content {
+  padding: 60px 0 0 215px;
+}
+.footer-logo {
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.footer-addres {
+  text-decoration: dashed;
+}
+.footer-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 20px;
+  font-style: normal;
+}
