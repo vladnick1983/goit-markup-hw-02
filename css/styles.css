@@ -85,6 +85,10 @@ html {
 }
 .solutions-block {
   padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .main-solutions-title {
   text-align: center;
@@ -101,7 +105,7 @@ html {
   background-color: var(--color-accent);
   border: 1px solid #2196f3;
   border-radius: 4px;
-  margin: 30px 0 0 700px;
+  margin-top: 30px;
   color: #fff;
 }
 /* Наши преимущества */
@@ -197,8 +201,9 @@ html {
   height: 252px;
   background-color: #2f303a;
   color: #fff;
-  position: absolute;
-  bottom: 0;
+}
+main {
+  flex: 1 1 auto;
 }
 .footer a {
   color: #fff;
@@ -221,4 +226,59 @@ html {
   line-height: 24px;
   margin-top: 20px;
   font-style: normal;
+  list-style: none;
+}
+/* Main portfolio */
+.contant {
+  width: 1170px;
+
+  height: 1360px;
+  margin-left: 215px;
+}
+.contant-portfolio {
+  display: none;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+  margin-top: 100px;
+}
+.nav-item button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 6px 22px;
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--color-title);
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+}
+.nav-item button:hover,
+.nav-item button:focus {
+  color: #fff;
+  background-color: var(--color-accent);
+}
+.contant-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 30px;
+  margin-top: 26px;
+}
+.contant-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--color-title);
+}
+.contant-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-text);
 }
