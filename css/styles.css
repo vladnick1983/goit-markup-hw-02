@@ -2,6 +2,11 @@
   --color-text: #757575;
   --color-title: #212121;
   --color-accent: #2196f3;
+  --color-dark-background: #2f303a;
+  --color-light-background: #f5f4fa;
+  --color-button-background: #eeeeee;
+  --color-white: #fff;
+  --color-light-white: rgba(255, 255, 255, 0.6);
   --font-size-text: 14px;
   --font-size-title: 36px;
 }
@@ -9,7 +14,7 @@
   margin: 0;
   padding: 0;
 }
-html {
+body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
@@ -50,6 +55,9 @@ html {
 .navigation-item {
   list-style: none;
 }
+.navigation-item a {
+  color: var(--color-title);
+}
 .navigation-link {
   text-decoration: none;
 }
@@ -64,8 +72,13 @@ html {
   gap: 50px;
   font-size: var(--font-size-text);
   font-weight: 500;
+  line-height: 16px;
 }
-.navigation-contacts-link {
+.navigation-contacts a {
+  color: var(--color-text);
+}
+.navigation-contacts-mail,
+.navigation-contacts-tel {
   text-decoration: none;
 }
 .navigation-contacts-mail:hover,
@@ -81,7 +94,7 @@ html {
 .main-solutions {
   width: 1600px;
   height: 600px;
-  background-color: #2f303a;
+  background-color: var(--color-dark-background);
 }
 .solutions-block {
   padding-top: 200px;
@@ -95,7 +108,7 @@ html {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
-  color: #fff;
+  color: var(--color-white);
 }
 .main-solutions-button {
   font-weight: 700;
@@ -103,10 +116,11 @@ html {
   width: 200px;
   height: 50px;
   background-color: var(--color-accent);
-  border: 1px solid #2196f3;
+  border: 1px solid var(--color-accent);
   border-radius: 4px;
   margin-top: 30px;
-  color: #fff;
+  color: var(--color-white);
+  cursor: pointer;
 }
 /* Наши преимущества */
 .main-privilege {
@@ -162,7 +176,7 @@ html {
   width: 1600px;
   height: 648px;
   margin-top: 90px;
-  background-color: #f5f4fa;
+  background-color: var(--color-light-background);
 }
 .team-title {
   text-align: center;
@@ -199,14 +213,14 @@ html {
 .footer {
   width: 1600px;
   height: 252px;
-  background-color: #2f303a;
-  color: #fff;
+  background-color: var(--color-dark-background);
+  color: var(--color-white);
 }
 main {
   flex: 1 1 auto;
 }
 .footer a {
-  color: #fff;
+  color: var(--color-white);
   text-decoration: none;
 }
 .footer-content {
@@ -227,6 +241,9 @@ main {
   margin-top: 20px;
   font-style: normal;
   list-style: none;
+}
+.footer-list a {
+  color: var(--color-light-white);
 }
 /* Main portfolio */
 .contant {
@@ -252,13 +269,13 @@ main {
   line-height: 26px;
   font-weight: 500;
   color: var(--color-title);
-  background-color: #eeeeee;
-  border: 1px solid #eeeeee;
+  background-color: var(--color-button-background);
+  border: 1px solid var(--color-button-background);
   border-radius: 4px;
 }
 .nav-item button:hover,
 .nav-item button:focus {
-  color: #fff;
+  color: var(--color-white);
   background-color: var(--color-accent);
 }
 .contant-list {
@@ -269,6 +286,9 @@ main {
   list-style: none;
   gap: 30px;
   margin-top: 26px;
+}
+.contant-link {
+  text-decoration: none;
 }
 .contant-title {
   font-weight: 700;
