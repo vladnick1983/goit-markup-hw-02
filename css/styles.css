@@ -61,8 +61,10 @@ body {
 .navigation-link {
   text-decoration: none;
 }
+
 .navigation-link:hover,
-.navigation-link:focus {
+.navigation-link:focus,
+.active:visited {
   color: var(--color-accent);
 }
 .navigation-contacts {
@@ -72,7 +74,8 @@ body {
   gap: 50px;
   font-size: var(--font-size-text);
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1.1;
+  list-style: none;
 }
 .navigation-contacts a {
   color: var(--color-text);
@@ -148,7 +151,7 @@ body {
 .privilege-item-text {
   margin-top: 10px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.7;
   color: var(--color-text);
 }
 /* Чем мы занимаемся */
@@ -159,8 +162,6 @@ body {
 }
 .lessons-title {
   text-align: center;
-  font-weight: 700;
-  font-size: 36px;
   font-weight: 700;
   font-size: 36px;
   color: var(--color-title);
@@ -182,8 +183,6 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
-  font-weight: 700;
-  font-size: 36px;
   color: var(--color-title);
   padding-top: 94px;
 }
@@ -197,7 +196,7 @@ body {
   color: var(--color-title);
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.1;
   text-align: center;
   margin-top: 30px;
 }
@@ -205,7 +204,7 @@ body {
   color: var(--color-text);
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.1;
   text-align: center;
   margin-top: 10px;
 }
@@ -237,13 +236,16 @@ main {
 .footer-list {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   margin-top: 20px;
   font-style: normal;
   list-style: none;
 }
 .footer-list a {
   color: var(--color-light-white);
+}
+.footer-list a:hover {
+  color: var(--color-accent);
 }
 /* Main portfolio */
 .contant {
@@ -272,6 +274,9 @@ main {
   background-color: var(--color-button-background);
   border: 1px solid var(--color-button-background);
   border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
 }
 .nav-item button:hover,
 .nav-item button:focus {
@@ -293,12 +298,12 @@ main {
 .contant-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   color: var(--color-title);
 }
 .contant-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
   color: var(--color-text);
 }
