@@ -64,6 +64,7 @@ body {
 
 .navigation-link:hover,
 .navigation-link:focus,
+.navigation-link:active,
 .active:visited {
   color: var(--color-accent);
 }
