@@ -129,7 +129,7 @@ body {
 /* Наши преимущества */
 .main-privilege {
   width: 1170px;
-  height: 101px;
+  height: auto;
   margin: 90px 0 0 215px;
   text-align: left;
 }
@@ -143,11 +143,20 @@ body {
 .privilege-item {
   list-style: none;
 }
+.privilege-item-img {
+  width: 270px;
+  height: 120px;
+  background-color: var(--color-light-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .privilege-item-title {
   font-size: var(--font-size-text);
   text-transform: uppercase;
   font-weight: 700;
   color: var(--color-title);
+  margin-top: 30px;
 }
 .privilege-item-text {
   margin-top: 10px;
