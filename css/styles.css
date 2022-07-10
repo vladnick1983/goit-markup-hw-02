@@ -5,7 +5,9 @@
   --color-dark-background: #2f303a;
   --color-light-background: #f5f4fa;
   --color-button-background: #eeeeee;
+  --color-button-background-focus: #188ce8;
   --color-white: #fff;
+  --collor-border:#ECECEC;
   --color-light-white: rgba(255, 255, 255, 0.6);
   --font-size-text: 14px;
   --font-size-title: 36px;
@@ -27,6 +29,7 @@ body {
   width: 1600px;
   height: 80px;
   text-decoration: none;
+  border-bottom: 1px solid var(--collor-border);
 }
 .nav a {
   color: var(--color-title);
@@ -65,7 +68,11 @@ body {
 .navigation-link:hover,
 .navigation-link:focus,
 .navigation-link:active,
-.active:visited {
+.navigation-item .active,
+.navigation-contacts-mail:hover,
+.navigation-contacts-mail:focus,
+.navigation-contacts-tel:hover,
+.navigation-contacts-tel:focus {
   color: var(--color-accent);
 }
 .navigation-contacts {
@@ -85,14 +92,7 @@ body {
 .navigation-contacts-tel {
   text-decoration: none;
 }
-.navigation-contacts-mail:hover,
-.navigation-contacts-mail:focus {
-  color: var(--color-accent);
-}
-.navigation-contacts-tel:hover,
-.navigation-contacts-tel:focus {
-  color: var(--color-accent);
-}
+
 /* Main */
 /* Решения */
 .main-solutions {
@@ -115,8 +115,9 @@ body {
   color: var(--color-white);
 }
 .main-solutions-button {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
+  line-height: 1.6;
   width: 200px;
   height: 50px;
   background-color: var(--color-accent);
@@ -124,7 +125,12 @@ body {
   border-radius: 4px;
   margin-top: 30px;
   color: var(--color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+.main-solutions-button:hover,
+.main-solutions-button:focus {
+  background: var(--color-button-background-focus);
 }
 /* Наши преимущества */
 .main-privilege {
@@ -134,7 +140,7 @@ body {
   text-align: left;
 }
 .main-privilege-title {
-  display: none;
+  visibility: hidden;
 }
 .privilege-list {
   display: flex;
@@ -202,6 +208,14 @@ body {
   gap: 30px;
   margin: 50px 0 0 215px;
 }
+.team-card {
+  width: 270px;
+  height: 428px;
+  background-color: var(--color-light-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-list-title {
   color: var(--color-title);
   font-weight: 500;
@@ -251,7 +265,8 @@ main {
   font-style: normal;
   list-style: none;
 }
-.footer-list a {
+.footer-list-email a,
+.footer-list-tel a {
   color: var(--color-light-white);
 }
 .footer-list a:hover {
@@ -265,7 +280,7 @@ main {
   margin-left: 215px;
 }
 .contant-portfolio {
-  display: none;
+  visibility: hidden;
 }
 .nav-list {
   display: flex;
@@ -278,8 +293,6 @@ main {
   display: inline-block;
   cursor: pointer;
   padding: 6px 22px;
-  line-height: 26px;
-  font-weight: 500;
   color: var(--color-title);
   background-color: var(--color-button-background);
   border: 1px solid var(--color-button-background);
@@ -292,6 +305,8 @@ main {
 .nav-item button:focus {
   color: var(--color-white);
   background-color: var(--color-accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .contant-list {
   display: flex;
